@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//鶴瓶
+//鶴瓶正義
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
