@@ -14,6 +14,8 @@
 		02EB69E52179B30900EB13F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EB69E32179B30900EB13F9 /* LaunchScreen.storyboard */; };
 		8C38DB382179E3EB00440C02 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C38DB372179E3EB00440C02 /* Register.swift */; };
 		8C38DB3A2179E92100440C02 /* nameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C38DB392179E92100440C02 /* nameList.swift */; };
+		02EB6A0B2179E77A00EB13F9 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EB6A0A2179E77A00EB13F9 /* CameraController.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		02EB69E62179B30900EB13F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C38DB372179E3EB00440C02 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		8C38DB392179E92100440C02 /* nameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nameList.swift; sourceTree = "<group>"; };
+		02EB6A0A2179E77A00EB13F9 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 				02EB69DE2179B30600EB13F9 /* Main.storyboard */,
 				8C38DB392179E92100440C02 /* nameList.swift */,
 				8C38DB372179E3EB00440C02 /* Register.swift */,
+				02EB6A0A2179E77A00EB13F9 /* CameraController.swift */,
 				02EB69E12179B30900EB13F9 /* Assets.xcassets */,
 				02EB69E32179B30900EB13F9 /* LaunchScreen.storyboard */,
 				02EB69E62179B30900EB13F9 /* Info.plist */,
@@ -142,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C38DB382179E3EB00440C02 /* Register.swift in Sources */,
+				02EB6A0B2179E77A00EB13F9 /* CameraController.swift in Sources */,
 				02EB69DD2179B30600EB13F9 /* ViewController.swift in Sources */,
 				8C38DB3A2179E92100440C02 /* nameList.swift in Sources */,
 				02EB69DB2179B30500EB13F9 /* AppDelegate.swift in Sources */,
