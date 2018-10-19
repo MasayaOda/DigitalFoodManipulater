@@ -7,13 +7,37 @@
 //
 
 import UIKit
-//鶴瓶正義
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate{
+    @IBOutlet weak var receipt: UIImageView!
+    //カメラロールを表示する
+    var imagePicker: UIImagePickerController!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
     }
-
-
+    
+    @IBAction func camera_select(_ sender: Any) {
+        //カメラロールを表示する
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    //カメラロールで処理が終わった時に呼び出される
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        //カメラロールを閉じて
+        imagePicker.dismiss(animated: true, completion: nil)
+        //選択した画像があれば
+        guard let image = info[.originalImage] as? UIImage else {
+            return
+        }
+        
+        // イメージビューの表示
+        receipt.image = image
+    }
 }
-
